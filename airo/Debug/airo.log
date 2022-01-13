@@ -1,0 +1,17 @@
+﻿  Game.cpp
+M:\airo\airo\Game.cpp(107,69): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+M:\airo\airo\Game.cpp(107,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+M:\airo\airo\Game.cpp(114,21): warning C4305: '=': truncation from 'double' to 'float'
+M:\airo\airo\Game.cpp(181,22): warning C4305: '=': truncation from 'double' to 'float'
+M:\airo\airo\Game.cpp(186,22): warning C4305: '=': truncation from 'double' to 'float'
+  main.cpp
+  Generating Code...
+  airo.vcxproj -> M:\airo\Debug\airo.exe
