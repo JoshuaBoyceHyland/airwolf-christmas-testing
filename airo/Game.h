@@ -54,7 +54,7 @@ private:
 	float m_framecounter = 0.0f; // counter for frames
 	float m_increment = 0.2f; // frame increment
 
-
+	sf::Vector2f m_lane{ 70.0f, 400.0f }; 
 	sf::Vector2f m_loaction{ 400.0f,300.0f };// helo location
 	sf::Vector2f m_velocity{ 0.0f,-0.0f };// velocity
 	Direction m_facing = Direction::None;

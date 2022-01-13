@@ -104,11 +104,13 @@ void Game::processMouse(sf::Event t_event)
 
 	if (sf::Mouse::Left == t_event.mouseButton.button)
 	{
-		m_target = sf::Vector2f(t_event.mouseButton.x, t_event.mouseButton.y);
-		displacment.x = static_cast<float>(t_event.mouseButton.x) - m_loaction.x;
-		displacment.y = static_cast<float>(t_event.mouseButton.y) - m_loaction.y;
-		lenght = std::sqrtf((displacment.x * displacment.x) + (displacment.y * displacment.y));
-		displacment = displacment / lenght;
+		m_target = m_lane; //sf::Vector2f(t_event.mouseButton.x, t_event.mouseButton.y);
+		//displacment.x = static_cast<float>(t_event.mouseButton.x) - m_loaction.x;
+		displacment.x = static_cast<float>(m_lane.x);  //- m_loaction.x; 
+		//displacment.y = static_cast<float>(t_event.mouseButton.y) - m_loaction.y;
+			displacment.y = static_cast<float>(m_lane.y);  //- m_loaction.y; 
+		//lenght = std::sqrtf((displacment.x * displacment.x) + (displacment.y * displacment.y));
+		displacment = displacment/ lenght;
 		m_velocity = displacment;
 		m_velocity = m_velocity * m_speed;
 		m_increment = 0.79;
